@@ -1,0 +1,52 @@
+---
+title: "Favorite Foods"
+author: "Tim Bollé"
+format: html
+---
+
+# Packages et données
+
+Pour commencer, nous allons charger les packages
+
+```{r}
+#| label: load-packages
+#| warning: false
+#| message: false
+
+library(tidyverse)
+```
+
+Les données se trouvent dans le dossier data et dans le fichier `favorite-foods.xlsx`
+
+
+# Exercices
+
+## Exercice 1
+
+Importez les données en utilisant la fonction `read_excel`.
+
+
+## Exercice 2
+
+Regardez le nom des colonnes. Est-ce que les noms sont satisfaisant ? Si non, nettoyez les noms de colonnes en utilisant la fonction `janitor::clean_names`
+
+## Exercice 3
+
+Affichez les données et déterminez les valeurs qui représentent des valeurs manquantes (`NA`)
+
+Importez les données en spécifiant les valeurs manquantes.
+
+## Exercice 4
+
+Utilisez la fonction `mutate` pour vous assurez que la colonne `age` contienne des valeurs numériques. Si ce n'est pas le cas, nettoyez les valeurs pour qu'elles soient numériques.
+
+
+## Exercice 5
+
+La colonne `ses` représente le statut socio-économique des individus. Transformez la en facteurs.
+
+## Exercice 6
+
+Regroupez toutes les étapes en un seul pipeline. Enregistrez le résultat dans une variable. Exportez les données dans un fichier CSV appelé `favorite-foods_clean.csv`
+
+
